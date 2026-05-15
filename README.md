@@ -13,11 +13,71 @@
 
 ## Contents
 
-The artifact contains 2 file(s), primarily Documentation.
+The artifact contains 349 file(s) including Python, Shell scripts, Config files, Data files, and Documentation.
 
 ```
-├── README.md
-└── VulGen.zip
+├── devign
+│   ├── __pycache__
+│   │   ├── trainer.cpython-38.pyc
+│   │   └── utils.cpython-38.pyc
+│   ├── data_loader
+│   │   ├── __pycache__
+│   │   ├── __init__.py
+│   │   ├── batch_graph.py
+│   │   └── dataset.py
+│   ├── devign_non_vulgen_reveal
+│   ├── devign_non_vulgen_xen
+│   ├── devign_vulgen_gth_reveal
+│   ├── devign_vulgen_gth_xen
+│   ├── devign_vulgen_reveal
+│   ├── devign_vulgen_syn_reveal
+│   ├── devign_vulgen_syn_xen
+│   ├── devign_vulgen_xen
+│   ├── devign_wild_reveal
+│   ├── devign_wild_xen
+│   ├── models
+│   │   ├── demo
+│   │   ├── devign_non_vulgen_reveal
+│   │   ├── devign_non_vulgen_xen
+│   │   ├── devign_vulgen_gth_reveal
+│   │   ├── devign_vulgen_gth_xen
+│   │   ├── devign_vulgen_reveal
+│   │   ├── devign_vulgen_syn_reveal
+│   │   ├── devign_vulgen_syn_xen
+│   │   ├── devign_vulgen_xen
+│   │   ├── devign_wild_reveal
+│   │   └── devign_wild_xen
+│   ├── modules
+│   │   ├── __pycache__
+│   │   ├── __init__.py
+│   │   └── model.py
+│   ├── devign_non_vulgen_reveal.py
+│   ├── devign_non_vulgen_reveal.sh
+│   ├── devign_non_vulgen_reveal.txt
+│   ├── devign_non_vulgen_xen.py
+│   ├── devign_non_vulgen_xen.sh
+│   ├── devign_non_vulgen_xen.txt
+│   ├── devign_vulgen_gth_reveal.py
+│   ├── devign_vulgen_gth_reveal.sh
+│   ├── devign_vulgen_gth_reveal.txt
+│   ├── devign_vulgen_gth_xen.py
+│   ├── devign_vulgen_gth_xen.sh
+│   ├── devign_vulgen_gth_xen.txt
+│   ├── devign_vulgen_reveal.py
+│   ├── devign_vulgen_reveal.sh
+│   ├── devign_vulgen_reveal.txt
+│   ├── devign_vulgen_syn_reveal.py
+│   ├── devign_vulgen_syn_reveal.sh
+│   ├── devign_vulgen_syn_reveal.txt
+│   ├── devign_vulgen_syn_xen.py
+│   ├── devign_vulgen_syn_xen.sh
+│   ├── devign_vulgen_syn_xen.txt
+│   ├── devign_vulgen_xen.py
+│   ├── devign_vulgen_xen.sh
+│   ├── devign_vulgen_xen.txt
+│   ├── devign_wild_reveal.py
+│   … (73 more items)
+… (439 more items)
 ```
 
 ---

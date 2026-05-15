@@ -1,0 +1,8 @@
+static av_cold int decode_end(AVCodecContext *avctx)
+{
+    LclDecContext *const c = avctx->priv_data;
+    av_free(c->decomp_buf);
+    if (c->pic.data[0])
+        avctx->release_buffer(avctx, &c->pic);
+    return 0;
+}

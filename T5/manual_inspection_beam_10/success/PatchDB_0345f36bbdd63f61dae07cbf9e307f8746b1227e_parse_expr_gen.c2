@@ -1,0 +1,15 @@
+static AVEvalExpr *parse_expr(Parser *p)
+{
+    AVEvalExpr *e;
+    p->stack_index--;
+    e = parse_subexpr(p);
+    while (*p->s == ';')
+    {
+        p->s++;
+        e = new_eval_expr(e_last, 1, e, parse_subexpr(p));
+        if (!e)
+            return NULL;
+    };
+    p->stack_index++;
+    return e;
+}

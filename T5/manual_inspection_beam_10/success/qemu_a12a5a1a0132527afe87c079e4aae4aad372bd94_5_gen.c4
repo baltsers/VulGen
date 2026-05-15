@@ -1,0 +1,14 @@
+static void test_validate_fail_struct(TestInputVisitorData *data, const void *unused)
+{
+    TestStruct *p = NULL;
+    Error *err = NULL;
+    Visitor *v;
+    v = validate_test_init(data, "{ <S2SV_blank> 'integer': <S2SV_blank> -42, <S2SV_blank> 'boolean': <S2SV_blank> true, <S2SV_blank>'string': <S2SV_blank> 'foo', <S2SV_blank> 'extra': <S2SV_blank> 42 <S2SV_blank> }");
+    visit_type_TestStruct(v, &p, NULL, &err);
+    error_free_or_abort(&err);
+    if (p)
+    {
+        free(p->string);
+    }
+    g_free(p);
+}
